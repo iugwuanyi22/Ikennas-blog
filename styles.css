@@ -1,0 +1,371 @@
+/* ===============================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   GLOBAL STYLES
+================================ */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+  background-color: #dbeafe; /* LIGHT BLUE EVERYWHERE */
+  color: #1e293b;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section {
+  padding: 60px 0;
+  background-color: transparent; /* shows blue behind */
+}
+
+.section-alt {
+  background-color: transparent; /* shows blue behind */
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  color: #555;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+/* ===============================
+   HEADER & NAV
+================================ */
+.site-header {
+  background-color: #dbeafe;
+  border-bottom: 1px solid #bfdbfe;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.section-alt .container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.logo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-text-main {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.logo-text-sub {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+/* ===============================
+   NAV LINKS
+================================ */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.nav-cta {
+  padding: 6px 12px;
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero {
+  padding: 70px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-text {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #1e293b;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.hero-img {
+  width: 75%;
+  border-radius: 10px;
+}
+
+/* ===============================
+   POSTS
+================================ */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.post-card {
+  background-color: #c7ddff; /* slightly darker blue */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #93c5fd;
+}
+
+.post-title {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.post-meta {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.post-excerpt {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.post-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+/* ===============================
+   CONTACT FORM
+================================ */
+.contact-form {
+  max-width: 600px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-btn {
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.footer {
+  background-color: #dbeafe;
+  color: #1e293b;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #bfdbfe;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+/* ===============================
+   DARK MODE (CLEAN VERSION)
+================================ */
+body.dark {
+  background-color: #0f172a; /* deep navy */
+  color: #e5e7eb;
+}
+
+/* Header */
+body.dark .site-header {
+  background-color: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* Nav links */
+body.dark .nav-links a {
+  color: #e5e7eb;
+}
+
+body.dark .nav-links a:hover {
+  color: #93c5fd;
+}
+
+body.dark .nav-cta {
+  border-color: #93c5fd;
+  color: #93c5fd;
+}
+
+/* Hero section */
+body.dark .hero {
+  background: linear-gradient(
+    180deg,
+    #020617 0%,
+    #0f172a 100%
+  );
+}
+
+/* Cards / sections */
+body.dark .section-alt {
+  background-color: transparent;
+}
+
+body.dark .section-alt .container {
+  background-color: #020617;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+/* Article cards */
+body.dark .post-card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+}
+
+/* Buttons */
+body.dark .hero-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+body.dark .hero-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Forms */
+body.dark input,
+body.dark textarea {
+  background-color: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+
+/* Footer */
+body.dark .footer {
+  background-color: #020617;
+  color: #9ca3af;
+  border-top: 1px solid #1e293b;
+}
+
+/* Toggle button */
+.theme-toggle {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #1e293b;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+body.dark .theme-toggle {
+  border-color: #93c5fd;
+  color: #93c5fd;
+}
+
