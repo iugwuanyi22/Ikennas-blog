@@ -1,227 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ikenna's Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ikenna Ugwuanyi | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header / Nav -->
+  <!-- Header -->
   <header class="site-header">
     <nav class="nav container">
-      <a href="#home" class="logo-area">
-        <div class="logo-image">
-          <img src="C:\Users\icugw\OneDrive - Tennessee State University\Pictures\Camera Roll\images/ikennas_blog_logo.jpg">
-        </div>
-        <div>
-          <div class="logo-text-main">IKENNA'S</div>
-          <div class="logo-text-sub">BLOG</div>
-        </div>
+      <a class="brand" href="#home">
+        <div class="brand-name">Ikenna Ugwuanyi</div>
+        <div class="brand-sub">Web Developer • BIS Student</div>
       </a>
 
       <div class="nav-links">
         <a href="#home">Home</a>
-        <a href="#articles">Articles</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="nav-cta">Subscribe</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </div>
-      <button id="themeToggle" class="theme-toggle" type="button">
-  🌙 Dark
-</button>
     </nav>
   </header>
 
   <main>
 
     <!-- Hero -->
-    <section id="home" class="hero container">
-      <div class="hero-grid">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
         <div>
           <div class="badge">
-            <div class="badge-dot"></div>
-            Welcome to the blog
+            <span class="badge-dot"></span>
+            Available for opportunities
           </div>
 
-          <h1>Welcome to Ikenna’s Blog</h1>
+          <h1>Hi, I’m Ikenna.</h1>
           <p class="hero-text">
-            Thoughts on tech, culture, and life — from DevOps experiments to personal stories and lessons learned.
+            I build clean, responsive websites and beginner-friendly projects.
+            I’m studying Business Information Systems and growing my skills in front-end development.
           </p>
-          <!-- BUTTON: scrolls to articles -->
-          <a class="hero-btn" href="#articles">Start Reading →</a>
+
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Hire / Contact</a>
+          </div>
         </div>
 
-        <img class="hero-img" src="C:\Users\icugw\OneDrive - Tennessee State University\Pictures\Camera Roll\images/ikennas_blog_logo.jpg">
-      </div>
-    </section>
-
-    <!-- Articles (cards) -->
-    <section id="articles" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Latest Articles</h2>
-        <p class="section-subtitle">
-          Here are some example posts. You can replace these with your real content later.
-        </p>
-
-        <div class="posts-grid">
-          <!-- Post 1 -->
-          <article class="post-card">
-            <h3 class="post-title">Getting Started with DevOps as a Beginner</h3>
-            <p class="post-meta">Tech • April 2025</p>
-            <p class="post-excerpt">
-              A simple breakdown of what DevOps actually is, the tools you’ll see everywhere,
-              and how to start without feeling overwhelmed.
-            </p>
-            <!-- BUTTON: jumps to full post section -->
-            <a href="#post1" class="post-link">Read more →</a>
-          </article>
-
-          <!-- Post 2 -->
-          <article class="post-card">
-            <h3 class="post-title">Learning Nigerian Pidgin: Small Small</h3>
-            <p class="post-meta">Culture • March 2025</p>
-            <p class="post-excerpt">
-              From “How far?” to “Wetin dey sup?”, here’s how I started reconnecting with language
-              and culture in a fun, low-pressure way.
-            </p>
-            <a href="#post2" class="post-link">Read more →</a>
-          </article>
-
-          <!-- Post 3 -->
-          <article class="post-card">
-            <h3 class="post-title">What My DevOps Internship Taught Me</h3>
-            <p class="post-meta">Career • February 2025</p>
-            <p class="post-excerpt">
-              Real lessons from working in a DevOps role: tools, teamwork, mistakes,
-              and what I’d tell anyone starting their first tech job.
-            </p>
-            <a href="#post3" class="post-link">Read more →</a>
-          </article>
+        <div class="hero-card">
+          <h3>Quick Info</h3>
+          <p><strong>Location:</strong> Memphis, TN</p>
+          <p><strong>Focus:</strong> Front-End / Web Dev</p>
+          <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+          <p><strong>Goal:</strong> Internship / Entry role</p>
         </div>
       </div>
     </section>
 
-    <!-- Full posts (targets for Read more buttons) -->
-    <section id="post1" class="section">
+    <!-- Projects -->
+    <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title">Getting Started with DevOps as a Beginner</h2>
-        <p class="section-subtitle">
-          A friendly introduction to what DevOps actually means and how you can begin your journey.
-        </p>
-        <p>
-          DevOps is all about connecting how we write code with how we run it in the real world.
-          Instead of developers throwing code “over the wall” to operations, DevOps focuses on
-          collaboration, automation, and constant improvement…
-        </p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A few things I’ve built. Replace the text with your real projects.</p>
+
+        <div class="grid">
+          <article class="card">
+  <h3 class="card-title">Personal Blog Website</h3>
+  <p class="meta">HTML • CSS • GitHub Pages</p>
+  <p class="desc">
+    A responsive personal blog website built with HTML and CSS.
+    Includes navigation, multiple sections, light/dark mode,
+    and deployment using GitHub Pages.
+  </p>
+  <div class="card-actions">
+    <a class="link" href="https://iugwuanyi22.github.io/Ikennas-blog/" target="_blank">
+      Live Demo
+    </a>
+    <a class="link" href="https://github.com/iugwuanyi22/Ikennas-blog" target="_blank">
+      Source Code
+    </a>
+  </div>
+</article>
+
+<article class="card">
+  <h3 class="card-title">Portfolio Website</h3>
+  <p class="meta">HTML • CSS</p>
+  <p class="desc">
+    A clean personal portfolio website showcasing projects, skills,
+    and contact information. Designed with a consistent layout
+    and modern styling.
+  </p>
+  <div class="card-actions">
+    <a class="link" href="https://iugwuanyi22.github.io/Ikennas-blog/" target="_blank">
+      Live Demo
+    </a>
+    <a class="link" href="https://github.com/iugwuanyi22/Ikennas-blog" target="_blank">
+      Source Code
+    </a>
+  </div>
+</article>
+
+<article class="card">
+  <h3 class="card-title">Web Development Practice Project</h3>
+  <p class="meta">HTML • CSS • GitHub</p>
+  <p class="desc">
+    A practice project used to strengthen front-end development skills,
+    including layout design, styling, responsiveness, and version control
+    with GitHub.
+  </p>
+  <div class="card-actions">
+    <a class="link" href="https://iugwuanyi22.github.io/Ikennas-blog/" target="_blank">
+      Live Demo
+    </a>
+    <a class="link" href="https://github.com/iugwuanyi22/Ikennas-blog" target="_blank">
+      Source Code
+    </a>
+  </div>
+</article>
+   
+        </div>
       </div>
     </section>
 
-    <section id="post2" class="section section-alt">
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">Learning Nigerian Pidgin: Small Small</h2>
-        <p class="section-subtitle">
-          How I started learning and using Pidgin to feel closer to my roots.
-        </p>
-        <p>
-          Nigerian Pidgin is relaxed, expressive, and fun. It’s the language of gist,
-          jokes, and everyday conversation. I started with simple phrases like
-          “How far?”, “Wetin dey sup?”, and “I dey” — and slowly added more from music,
-          movies, and family conversations…
-        </p>
-      </div>
-    </section>
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Core tools and strengths I’m building.</p>
 
-    <section id="post3" class="section">
-      <div class="container">
-        <h2 class="section-title">What My DevOps Internship Taught Me</h2>
-        <p class="section-subtitle">
-          Real lessons from working in a DevOps environment for the first time.
-        </p>
-        <p>
-          During my internship, I learned that DevOps is less about fancy tools and more about
-          habits: writing clear documentation, communicating with teammates, and always testing
-          before you ship. I also got hands-on with things like CI/CD pipelines, monitoring,
-          and troubleshooting issues under pressure…
-        </p>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Git/GitHub</span>
+          <span class="chip">Responsive Design</span>
+          <span class="chip">Problem Solving</span>
+        </div>
       </div>
     </section>
 
     <!-- About -->
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title">About Ikenna</h2>
+        <h2 class="section-title">About</h2>
         <p class="section-subtitle">
-          I’m Ikenna — a curious mind exploring tech, culture, and personal growth.
+          Short intro. Keep it real and simple.
         </p>
         <p>
-          This blog is where I document what I’m learning, what I’m building,
-          and what I’m thinking about. Expect a mix of DevOps experiments, reflections
-          on identity and culture, and honest takes on navigating life, school, and career.
+          I’m a BIS student focused on web development and building a strong portfolio.
+          I like creating clean user interfaces, learning new tools, and improving through projects.
+          I’m currently looking for opportunities to grow in a real-world team environment.
         </p>
       </div>
     </section>
 
-    <!-- Contact / Subscribe -->
+    <!-- Contact -->
     <section id="contact" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">Stay in Touch</h2>
+        <h2 class="section-title">Contact</h2>
         <p class="section-subtitle">
-          Have feedback, ideas, or just want to say hi? Use the form below.
+          Best option: link to your email + social profiles. (Forms need a service like Formspree on GitHub Pages.)
         </p>
 
-        <!-- BUTTON: this will open the user's email app -->
-        <form class="contact-form"
-              action="mailto:youremail@example.com"
-              method="post"
-              enctype="text/plain">
-          <div class="form-row">
-            <div class="form-field">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name">
-            </div>
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com">
-            </div>
-          </div>
+        <div class="contact-box">
+          <p><strong>Email:</strong> <a class="link" href="mailto:yourpersonalemail@gmail.com">yourpersonalemail@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a class="link" href="#" target="_blank" rel="noreferrer">github.com/yourusername</a></p>
+          <p><strong>LinkedIn:</strong> <a class="link" href="#" target="_blank" rel="noreferrer">linkedin.com/in/yourprofile</a></p>
 
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="What’s on your mind?"></textarea>
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="btn" href="mailto:yourpersonalemail@gmail.com?subject=Portfolio%20Inquiry">Email Me</a>
+            <a class="btn btn-outline" href="#projects">See Projects</a>
           </div>
-
-          <button type="submit" class="hero-btn form-btn">Send Message</button>
-        </form>
-        <p style="margin-top:0.75rem; font-size:0.85rem; color:#667085;">
-          
-        </p>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Ikenna's Blog — All rights reserved.</p>
+    <p>© 2025 Ikenna Ugwuanyi — Portfolio</p>
   </footer>
-<script>
-  const toggleBtn = document.getElementById("themeToggle");
-  const savedTheme = localStorage.getItem("theme");
-
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark");
-    toggleBtn.textContent = "☀️ Light";
-  }
-
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    const isDark = document.body.classList.contains("dark");
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-    toggleBtn.textContent = isDark ? "☀️ Light" : "🌙 Dark";
-  });
-</script>
 
 </body>
 </html>
